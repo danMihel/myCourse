@@ -26,11 +26,11 @@ function  chooseYourCourse(arrCourses, range) {
         return (arr[0] === null ? 0 : arr[0]);
     }
 
-    const MaxValueWithNull = (arr) => {
+    const maxValueWithNull = (arr) => {
         return (arr[1] === null ? Infinity : arr[1]);
     }
 
-    const rez = arrCourses.filter(course => (minValueWithNull(course.prices) <= MaxValueWithNull(range)) && MaxValueWithNull(course.prices) >= minValueWithNull(range));
+    const rez = arrCourses.filter(course => (minValueWithNull(course.prices) <= maxValueWithNull(range)) && maxValueWithNull(course.prices) >= minValueWithNull(range));
     
     const minus = arrCourses.filter(course => noPriceArr (course.prices));
 
