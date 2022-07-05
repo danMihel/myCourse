@@ -44,5 +44,5 @@ function  chooseYourCourse(arrCourses, range) {
         
         return resArray;
     };
-return  myCourse(rez, minus);
+return  myCourse(rez);
 }
