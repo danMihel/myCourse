@@ -40,9 +40,9 @@ function  chooseYourCourse(arrCourses, range) {
             nameArr.push(element.name);
         });
 
-        const newArray = nameArr.filter(function(f) { return f !== minus[0].name});
+        const resArray = nameArr.filter(function(f) { return f !== minus[0].name});
         
-        return newArray;
+        return resArray;
     };
 return  myCourse(rez, minus);
 }
